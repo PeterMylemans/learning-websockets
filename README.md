@@ -11,6 +11,10 @@ You'll find two modules in this project: a client and a server.
 
 The client uses React + Typescript in a standard create-react-app setup, while the server uses Spring (Boot) + Kotlin.
 
+On the front-end side, the code is pretty straight forward. Proxying the websocket through the development server to the backend service, required some trial and error but the resulting code in `client/setupProxy.js` is quite stable.
+
+In the back-end you'll find most code documented with some hints about what is happening. A good place to start are the `WebSocketConfig.kt` and `GreetingController.kt`.
+
 ## Demo time
 
 1. Start your Spring Boot based server by running `Server.kt` in the server project.
