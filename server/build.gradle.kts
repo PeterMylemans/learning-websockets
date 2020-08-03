@@ -8,11 +8,6 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-}
-
 tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions.jvmTarget = "11"
 }
