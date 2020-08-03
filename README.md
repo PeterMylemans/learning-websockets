@@ -1,3 +1,5 @@
+This is a personal project to experiment and learn how to use websockets in a Spring Boot app with a React frontend.
+
 ## Learning resources
 * https://stomp.github.io/
 * https://stomp-js.github.io/guide/stompjs/using-stompjs-v5.html
