@@ -7,13 +7,18 @@ This is a personal project to experiment and learn how to use websockets in a Sp
 
 ## Project overview
 
-You'll find two modules in this project: a client and a server.
+You'll find two modules in this project: a client and a server. The client uses React + Typescript in a standard create-react-app setup, while the server uses Spring (Boot) + Kotlin.
 
-The client uses React + Typescript in a standard create-react-app setup, while the server uses Spring (Boot) + Kotlin.
+On the client side, the code is pretty straight forward. Proxying the websocket through the development server to the backend service, required some trial and error but the resulting code in `client/setupProxy.js` is quite stable.
 
-On the front-end side, the code is pretty straight forward. Proxying the websocket through the development server to the backend service, required some trial and error but the resulting code in `client/setupProxy.js` is quite stable.
+In the server module you'll find most code documented with some hints about what is happening. A good place to start are the `WebSocketConfig.kt` and `GreetingController.kt`.
 
-In the back-end you'll find most code documented with some hints about what is happening. A good place to start are the `WebSocketConfig.kt` and `GreetingController.kt`.
+## Importing the project
+
+You can just import this directory as a gradle project into IntelliJ. 
+It should pickup all config from the gradle build files.
+
+You might have to configure an OpenJDK 11 as your SDK.
 
 ## Demo time
 
